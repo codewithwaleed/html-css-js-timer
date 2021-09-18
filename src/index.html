@@ -1,0 +1,24 @@
+<html>
+
+<head>
+  <title>Timer</title>
+  <link rel="stylesheet" type="text/css" href="./css/styles.css" />
+  <script type="text/javascript" src="./js/index.js"></script>
+
+</head>
+
+<body>
+  <div class="timer-container">
+    <div class="timer-section">
+      <label onclick="touchLabel()" class="timer-lbl">23:59:59</label>
+      <input onblur="updateLabelValue()" onkeyup="onChangeText()" maxlength="8" class="timer-txt hide" type="text" />
+      <div>
+        <label class="error hide">Please type correct format (hh:mm:ss)  and max limit is: 23:59:59</label>
+      </div>
+    </div>
+    <button onclick="start()" class="confirm-btn">Confirm Remaining Time for Request</button>
+
+  </div>
+</body>
+
+</html>

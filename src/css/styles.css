@@ -1,0 +1,57 @@
+*{
+  margin: 0 auto;
+}
+body{
+  margin: 0 auto;
+  padding: 0;
+}
+
+.timer-container{
+  padding: 1em;
+  text-align: center;
+}
+
+.timer-section{
+  margin-bottom: 1em;
+}
+
+.timer-lbl{
+  font-size: 1.9em;
+  cursor: pointer;
+}
+
+.timer-txt{
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.9em;
+  width: 7em;
+  text-align: center;
+  border: 1px solid lightgrey;
+}
+
+.confirm-btn{
+  background-color: #00C853;
+  border: 1px solid #ffffff;
+  box-shadow: 0px 8px 15px rgb(0 0 0 / 15%);
+  padding: 0.5em;
+  color: #ffffff;
+  border-radius: 1em;
+  font-size: 0.9em;
+  width: 25%;
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.confirm-btn:hover {
+  box-shadow: 0px 15px 20px rgb(0 0 0 / 20%);
+  color: #fff;
+}
+
+.hide{
+  display: none;
+}
+
+.error{
+  color: red;
+  font-size: 0.7em;
+}
