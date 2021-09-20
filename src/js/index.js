@@ -72,10 +72,21 @@ function start() {
   let minutes = parseInt(timer[1], 10);
   let seconds = parseInt(timer[2], 10);
 
+
   myTimer = setInterval(myClock, 1000);
   var c = 5;
   function myClock() {
     let newValue = ''
+
+    if(hours > 0 && seconds == 0 && minutes == 0){
+      seconds = 59;
+      minutes = 59;
+      hours=hours-1
+      newValue = `${String(hours).padStart(2, '0')}:${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`
+      document.getElementsByClassName("timer-lbl")[0].innerHTML = newValue
+      return;
+    }
+
     if(seconds > 0){
       seconds = --seconds;
     }else if(seconds == 0 && minutes > 0){
